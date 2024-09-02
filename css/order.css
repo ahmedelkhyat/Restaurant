@@ -1,0 +1,72 @@
+.order {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  min-height: 100vh;
+  background-image: url("../images/order.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.order .heading p {
+  background-color: var(--transparent-color);
+  color: #fff;
+  padding: 3px;
+}
+.order .order-content {
+  width: 60%;
+  margin: auto;
+  padding: 30px 40px;
+  color: #fff;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+}
+@media (max-width: 768px) {
+  .order .order-content {
+    width: 100%;
+  }
+}
+.order .order-content .form-group {
+  margin-bottom: 20px;
+}
+.order .order-content .form-group label:not(.checkbox-label) {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 100;
+}
+.order .order-content .form-group input,
+.order .order-content .form-group select,
+.order .order-content .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+.order .order-content .form-group input[type="checkbox"] {
+  width: fit-content;
+  margin-right: 10px;
+  accent-color: var(--main-color);
+  cursor: pointer;
+}
+.order .order-content .form-group .checkbox-label {
+  cursor: pointer;
+}
+.order .order-content .form-group:last-of-type {
+  text-align: center;
+}
+.order .order-content .form-group .submit-button {
+  height: 45px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--main-transition) ease;
+}
+.order .order-content .form-group .submit-button:hover {
+  background-color: transparent;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}

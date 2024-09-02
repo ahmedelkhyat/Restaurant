@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/order.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <img src="../images/logo.png" alt="Logo" />
+        </a>
+        <nav>
+          <input type="checkbox" id="toggle-menu" class="toggle-menu" />
+          <label for="toggle-menu" class="menu-icon">&#9776;</label>
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="order.html">Order</a>
+            </li>
+            <li>
+              <a href="menu.html">Menu</a>
+            </li>
+            <li>
+              <a href="register.html" class="button register">Register</a>
+            </li>
+            <li><a href="login.html" class="button login">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="order">
+      <div class="container">
+        <div class="heading">
+          <h1>Order</h1>
+          <p>Customize your order and enjoy your favorite dishes</p>
+        </div>
+        <div class="order-content">
+          <form>
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder=" Enter your full name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder=" Enter your phone number"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder=" Enter your email address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="order-item">Select Your Dish:</label>
+              <select name="order-item" id="order-item">
+                <option value="pancake-bread">Pancake Bread</option>
+                <option value="tortilla breakfast-wrap">
+                  Tortilla Breakfast Wrap
+                </option>
+                <option value="pancakes">Pancakes</option>
+                <option value="burger-with-melted-cheese">
+                  Burger with melted cheese
+                </option>
+                <option value="pouring-honey-on-pancakes">
+                  Pouring honey on pancakes
+                </option>
+                <option value="chicken-avocado-wraps">
+                  Chicken avocado wraps
+                </option>
+                <option value="filet-mignon-with-greens">
+                  Filet mignon with greens
+                </option>
+                <option value="plate-of-noodles-with-shrimps">
+                  Plate of noodles with shrimps
+                </option>
+                <option value="fruit-tarts">Fruit tarts</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                name="quantity"
+                id="quantity"
+                value="1"
+                min="1"
+                max="10"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Additional Customization:</label>
+              <div>
+                <input
+                  type="checkbox"
+                  name="customization"
+                  id="extra-cheese"
+                  value="extra-cheese"
+                />
+                <label for="extra-cheese" class="checkbox-label"
+                  >Extra Cheese</label
+                >
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="customization"
+                  id="spicy"
+                  value="spicy"
+                />
+                <label for="spicy" class="checkbox-label">Spicy</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="customization"
+                  id="no-onions"
+                  value="no-onions"
+                />
+                <label for="no-onions" class="checkbox-label">No Onions</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="customization"
+                  id="gluten-free"
+                  value="gluten-free"
+                />
+                <label for="gluten-free" class="checkbox-label"
+                  >Gluten Free</label
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="special-requests">Special Requests:</label>
+              <textarea
+                name="special-requests"
+                id="special-requests"
+                rows="4"
+                placeholder="Any special requests?"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="submit-button">Place Order</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <a href="../index.html">
+            <img src="../images/logo.png" alt="Logo" />
+          </a>
+          <p>
+            A memorable dining experience awaits with dishes that showcase the
+            finest ingredients, rich flavors, and a warm, elegant atmosphere.
+            Perfect for any occasion.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-content">
+          <h4>Main Menu</h4>
+          <ul>
+            <li>
+              <a href="../index.html">
+                <i class="fa-solid fa-angles-right"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <i class="fa-solid fa-angles-right"></i>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <i class="fa-solid fa-angles-right"></i>
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="order.html">
+                <i class="fa-solid fa-angles-right"></i>
+                Order
+              </a>
+            </li>
+            <li>
+              <a href="menu.html">
+                <i class="fa-solid fa-angles-right"></i>
+                Menu
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>
+              <a href="../index.html">
+                <i class="fa-solid fa-angles-right"></i>
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="../index.html">
+                <i class="fa-solid fa-angles-right"></i>
+                Terms & Conditions
+              </a>
+            </li>
+            <li>
+              <a href="../index.html">
+                <i class="fa-solid fa-angles-right"></i>
+                Disclaimer
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              El Tahrir Street, Cairo, Egypt
+            </li>
+            <li>
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              +20 100 123 4567
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              restaurant@gmail.com
+            </li>
+            <li>
+              <i class="fa-solid fa-earth-europe"></i>
+              www.restaurant.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 <span>Restaurant</span> All Rights Reserved</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+.login {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/login.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.login form {
+  width: 420px;
+  padding: 30px 40px;
+  color: #fff;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+}
+.login form h1 {
+  color: var(--main-color);
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.login form .input-box {
+  height: 50px;
+  margin: 30px 0px;
+  position: relative;
+}
+.login form .input-box input {
+  width: 100%;
+  height: 100%;
+  padding: 20px 45px 20px 20px;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+}
+.login form .input-box i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: var(--transparent-color);
+  font-size: 20px;
+}
+.login form .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: -15px 0px 15px;
+}
+.login form .remember-forgot label,
+.login form .remember-forgot label input {
+  cursor: pointer;
+}
+.login form .remember-forgot label input {
+  accent-color: var(--main-color);
+  margin-right: 5px;
+}
+.login form .remember-forgot a {
+  text-decoration: none;
+  color: #fff;
+  transition: var(--main-transition) ease;
+}
+.login form .remember-forgot a:hover {
+  color: var(--main-color);
+}
+.login form .submit-button {
+  width: 100%;
+  height: 45px;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  font-weight: 600;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: var(--main-transition) ease;
+}
+.login form .submit-button:hover {
+  background-color: transparent;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+.login form .register-link {
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 0px 15px;
+}
+.login form .register-link p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: var(--main-transition) ease;
+}
+.login form .register-link p a:hover {
+  color: var(--main-color);
+}
